@@ -6,9 +6,6 @@ public class MainVehiculo {
        
         System.out.println(objVehiculo1.calcularAntiguedadVehiculo(2026));
         System.out.println(objVehiculo2.calcularAntiguedadVehiculo(2026));
-       
- 
- 
     }    
 }
  
