@@ -26,14 +26,20 @@ public class CuentaBancaria {
     }
 
 //Metodo para retirar dinero
-    public void retirar(double monto) 
+    public void retirar(double monto){
     if (monto<=0){
-        System.System.out.println("El monto a retirar debe ser mayor a cero");
-    }   
+        System.out.println("El monto a retirar debe ser mayor a cero");
+    } else if (monto > saldo){
+        System.out.println("Saldo insuficiente. Saldo actual: " + saldo);
+    } else {
+        saldo = saldo - monto;
+        System.out.println("Retiro exitoso. Nuevo saldo: " + saldo);
+    }}
+public String toString() {
+        return "CuentaBancaria [saldo: "+ saldo + " titular: " + titular + 
+        " numeroCuenta: " + numeroCuenta + "tipoCuenta:" + tipoCuenta + 
+        " clave: " + clave + "]";
 
-public String toString  (){
-        return "CuentaBancaria [saldo: "+ saldo + " titular: " + titular + " numeroCuenta: " + numeroCuenta + "tipoCuenta:" + tipoCuenta + " clave: " + clave + "]";
-
-}
+    }
 
 }

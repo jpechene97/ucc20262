@@ -15,6 +15,10 @@ public class Vehiculo {
         this.peso = peso;
         this.linea = linea;
     }
+    // Calcular la antiguedad del vehiculo
+    public int calcularAntiguedad(int anioActual){
+        return anioActual - this.modelo;
+    }    
  
     public String toString(){
         return "Vehiculo [ modelo: " + modelo + " marca: " + marca + "color: " + color +
