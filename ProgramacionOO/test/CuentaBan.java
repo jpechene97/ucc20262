@@ -6,7 +6,6 @@ public class CuentaBan {
     private String titular;
     private String numeroCuenta;
     private double saldo;
-    //comentarios
 
     //Constructor de la clase --> Recuerde que tiene el mismo nombre de la clase
     public CuentaBan(int id, String titular, String numeroCuenta, double saldo){
