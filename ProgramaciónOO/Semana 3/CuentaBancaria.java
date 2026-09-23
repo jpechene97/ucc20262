@@ -1,45 +1,28 @@
 public class CuentaBancaria {
-
-    //Atributos de la clase CuentaBancaria
-    private double saldo;
+    //Atributos
+    private int id;
     private String titular;
-    private int numeroCuenta;
-    private String tipoCuenta;
-    private int clave;
+    private String numeroCuenta;
+    private double saldo;
 
-    //Constructor de la clase
-    public CuentaBancaria(int saldo, String titular, int numeroCuenta, String tipoCuenta, int clave){
-        this.saldo = saldo;
+    //Constructor de la clase --> Recuerde que tiene el mismo nombre de la clase
+    public CuentaBancaria(int id, String titular, String numeroCuenta, double saldo){
+        this.id = id;
         this.titular = titular;
         this.numeroCuenta = numeroCuenta;
-        this.tipoCuenta = tipoCuenta;
-        this.clave = clave;
-    }
-    // Método para depositar dinero
-    public void depositar(double monto) {
-        if (monto>0){
-            saldo = saldo + monto;
-            System.out.println("Depósito exitoso. Nuevo saldo: " + saldo);
-        }else{
-            System.out.println("El monto a depositar debe ser mayor a cero.");
-        }
+        this.saldo = saldo;
     }
 
-//Metodo para retirar dinero
-    public void retirar(double monto){
-    if (monto<=0){
-        System.out.println("El monto a retirar debe ser mayor a cero");
-    } else if (monto > saldo){
-        System.out.println("Saldo insuficiente. Saldo actual: " + saldo);
-    } else {
-        saldo = saldo - monto;
-        System.out.println("Retiro exitoso. Nuevo saldo: " + saldo);
-    }}
-public String toString() {
-        return "CuentaBancaria [saldo: "+ saldo + " titular: " + titular + 
-        " numeroCuenta: " + numeroCuenta + "tipoCuenta:" + tipoCuenta + 
-        " clave: " + clave + "]";
+    //Método consignar
+    public double consignar(double valor){
+        double total = saldo + valor;
+        return total;
+    }
 
+
+    public String toString(){
+        return "CuentaBancaria [ id: " + id + " titular: " + titular + " numeroCuenta: " + 
+                                         numeroCuenta + " saldo: " + saldo + "]";
     }
 
 }
