@@ -1,8 +1,9 @@
-public class EjecutarCuentaBancaria {
-    
-  public static void main(String[] args){
+package ProgramacionOO.test;
 
-        CuentaBancaria objCuenta1 = new CuentaBancaria(279836, "Jhon", "100-34566 54", 0.0);
+public class EjecutarCuentaBan {
+     public static void main(String[] args){
+
+        CuentaBan objCuenta1 = new CuentaBan(279836, "Jhon", "100-34566 54", 0.0);
 
         //Mostrar el objeto en su estado inicial
         System.out.println(objCuenta1);
@@ -10,6 +11,5 @@ public class EjecutarCuentaBancaria {
         System.out.println("Total de la cuenta: " + objCuenta1.consignar(1000.0));
         //Mostrar el objeto después de la consignación
         System.out.println(objCuenta1);
-        }
-        }
-        
+     }
+}

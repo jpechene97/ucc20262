@@ -1,4 +1,6 @@
-public class CuentaBancaria {
+package ProgramacionOO.test;
+
+public class CuentaBan {
     //Atributos
     private int id;
     private String titular;
@@ -6,7 +8,7 @@ public class CuentaBancaria {
     private double saldo;
 
     //Constructor de la clase --> Recuerde que tiene el mismo nombre de la clase
-    public CuentaBancaria(int id, String titular, String numeroCuenta, double saldo){
+    public CuentaBan(int id, String titular, String numeroCuenta, double saldo){
         this.id = id;
         this.titular = titular;
         this.numeroCuenta = numeroCuenta;
@@ -19,10 +21,9 @@ public class CuentaBancaria {
         return total;
     }
 
-
+    @Override
     public String toString(){
         return "CuentaBancaria [ id: " + id + " titular: " + titular + " numeroCuenta: " + 
                                          numeroCuenta + " saldo: " + saldo + "]";
     }
-
 }
