@@ -1,4 +1,4 @@
-package ProgramacionOO.test;
+package ProgramacionOO.Semana4;
 
 public class CuentaBan {
     //Atributos
@@ -18,6 +18,11 @@ public class CuentaBan {
     //Método consignar
     public double consignar(double valor){
         double total = saldo + valor;
+        return total;
+
+        //Método retirar
+    public double retirar(double valor){
+        double total = saldo - valor;
         return total;
     }
 
