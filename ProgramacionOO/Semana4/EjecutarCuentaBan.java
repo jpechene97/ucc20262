@@ -1,19 +1,23 @@
 package ProgramacionOO.Semana4;
 
 public class EjecutarCuentaBan {
-     public static void main(String[] args){
+   public static void main(String[] args) {
 
-        CuentaBan objCuenta1 = new CuentaBan(279836, "Jhon", "100-34566 54", 0.0);
+      CuentaBan objCuenta1 = new CuentaBan(279836, "Jhon", "100-34566 54", 1000.0);
 
-        //Mostrar el objeto en su estado inicial
-        System.out.println(objCuenta1);
-        //Consignando 1000.0 a la cuenta 
-        System.out.println("Total de la cuenta: " + objCuenta1.consignar(1000.0));
-        //Mostrar el objeto después de la consignación
-        System.out.println(objCuenta1);
+      // Mostrar el objeto en su estado inicial
+      System.out.println(objCuenta1);
+      // Consignando 1000.0 a la cuenta
+      System.out.println("Total de la cuenta: " + objCuenta1.consignar(1000.0));
+      // Mostrar el objeto después de la consignación
+      System.out.println(objCuenta1);
 
-         System.out.println("Total de la cuenta: " + objCuenta1.consignar(1000.0));
-        //Mostrar el objeto después del retiro
-        System.out.println(objCuenta1);
-     }
+      System.out.println("Total de la cuenta: " + objCuenta1.retirar(100.0));
+      // Mostrar el objeto después del retiro
+      System.out.println(objCuenta1);
+
+      System.out.println("Su saldo actual es: " + objCuenta1.saldo(0.0));
+      // Mostrar el saldo actual de la cuenta
+      System.out.println(objCuenta1);
+   }
 }

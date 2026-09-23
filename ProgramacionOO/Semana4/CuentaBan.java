@@ -19,11 +19,22 @@ public class CuentaBan {
     public double consignar(double valor){
         double total = saldo + valor;
         return total;
+    }
 
         //Método retirar
-    public double retirar(double valor){
-        double total = saldo - valor;
-        return total;
+    public String retirar(double valor){
+        String msg = "";
+        if(valor > saldo){
+            msg = "No se puede hacer el retiro";
+        } else {
+             msg = (saldo - valor) + "";
+        }
+        return msg;
+    }
+
+    //Consultar saldo
+    public String saldo(double valor){
+        return "Saldo actual: " + saldo;
     }
 
     @Override
