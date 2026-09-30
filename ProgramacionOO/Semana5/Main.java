@@ -27,10 +27,10 @@ public class Main {
         //Mostrar el objeto completo
         System.out.println(objEst2); //Estudiante [ nombre: María Isabel documento: 89698563 edad: 22 programa: Ingeniería de Sistemas ]
         
-        //validar con el metodo setEdad que la edad sea mayor o igual a cero
+        //validar con el método setEdad que la edad sea mayor o igual a cero
         objEst1.setEdad(30);
         System.out.println(objEst1);
-        objEst1.setEdad(-30);
-
+        objEst1.setEdad(-30); // La edad tiene que ser mayor o igual a cero
+        
     }
 }

@@ -1,16 +1,14 @@
 package ProgramacionOO.Semana5;
 
 public class Estudiante {
-
-    //Atributos de la clase
-
+    
+    //Atributos
     private String nombre;
     private String documento;
     private int edad;
     private String programa;
-
-    //Contructor de la clase
-
+    
+    //Constructor de la clase
     public Estudiante(String nombre, String documento, int edad, String programa){
         this.nombre = nombre;
         this.documento = documento;
@@ -18,46 +16,36 @@ public class Estudiante {
         this.programa = programa;
     }
     
-    //getter y setter
-
+    //Los métodos getter y setter
     public String getNombre(){
         return nombre;
     }
-
-    public void setNombre (String nombre){
+    
+    public void setNombre(String nombre){
         this.nombre = nombre;
-
     }
-public String getDocumento(){
+
+    public String getDocumento(){
         return documento;
     }
+    
+    public void setDocumento(String documento){
+        this.documento = documento;}
 
-    public void setDocumento (String documento){
-        this.documento = documento;
-        
-    }
-    public int getEdad(){
-        return edad;
-    }
-
-    public void setEdad (int edad){
-        this.edad = edad;
-        
-    }
-    public String getPrograma() {
+    public String getPrograma(){
         return programa;
     }
-    public void setPrograma(String programa) {
+    
+    public void setPrograma(String programa){
         this.programa = programa;
     }
-
-    //Metodos getter y setter
-    //Metodo toString (Mostrar la información del objeto)
-
+    
+    //Método toString (Mostar la información del objeto)
     public String toString(){
-        return "Estudiante [ nombre: "+ nombre + " documento: " + documento + " edad: " + edad + " programa: " + programa + "]"; 
+        return "Estudiante [ nombre: " + nombre + " documento: " + documento + " edad: " + edad + " programa: " + programa + " ]";
     }
-    public int getEdad(){
+    
+public int getEdad(){
         return edad;
     }
     
@@ -66,5 +54,5 @@ public String getDocumento(){
             this.edad = edad;
         else
             System.out.println("La edad es negativa");
-}
+    }
 }
