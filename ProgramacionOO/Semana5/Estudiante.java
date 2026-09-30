@@ -22,7 +22,10 @@ public class Estudiante {
     }
     
     public void setNombre(String nombre){
-        this.nombre = nombre;
+        if(nombre.equals(""))
+            System.out.println("Nombre vacío....");
+        else
+            this.nombre = nombre;
     }
 
     public String getDocumento(){
@@ -30,7 +33,19 @@ public class Estudiante {
     }
     
     public void setDocumento(String documento){
-        this.documento = documento;}
+        this.documento = documento;
+    }
+
+    public int getEdad(){
+        return edad;
+    }
+    
+    public void setEdad(int edad){
+        if(edad >= 0) 
+            this.edad = edad;
+        else
+            System.out.println("La edad es negativa");
+    }
 
     public String getPrograma(){
         return programa;
@@ -45,14 +60,4 @@ public class Estudiante {
         return "Estudiante [ nombre: " + nombre + " documento: " + documento + " edad: " + edad + " programa: " + programa + " ]";
     }
     
-public int getEdad(){
-        return edad;
-    }
-    
-    public void setEdad(int edad){
-        if(edad >= 0) 
-            this.edad = edad;
-        else
-            System.out.println("La edad es negativa");
-    }
 }

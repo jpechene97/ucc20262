@@ -32,5 +32,10 @@ public class Main {
         System.out.println(objEst1);
         objEst1.setEdad(-30); // La edad tiene que ser mayor o igual a cero
         
+        //validar con el método setNombre para que no se cree un nombre vacío
+        objEst2.setNombre(""); //Nombre vacío
+        objEst2.setNombre("Amparo");
+        System.out.println(objEst2);
+        
     }
 }
