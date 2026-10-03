@@ -1,6 +1,6 @@
 package ProgramacionOO.Semana5;
 
-public class Biblioteca {
+public class Libro {
 
     //Atributos
     private String libroconisbn;
@@ -10,12 +10,12 @@ public class Biblioteca {
     private boolean disponible;
     
     //constructor
-    public Biblioteca(String libroconisbn, String titulo, String autor, int aniopublicacion, boolean disponible){
+    public Libro (String libroconisbn, String titulo, String autor, int aniopublicacion){
         this.libroconisbn = libroconisbn;
         this.titulo = titulo;
         this.autor = autor;
         this.aniopublicacion = aniopublicacion;
-        this.disponible = disponible;
+        this.disponible = true;
         
     }
     //Metodos getter y setter
