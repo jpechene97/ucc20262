@@ -17,6 +17,11 @@ public class Trabajador {
       public String getNombre(){
         return nombre;
     }
+
+     public double getSalario(){
+        return salario;
+    }
+    
     //Metodo pagar
     public double pagar(){
         return salario * 1.10;
