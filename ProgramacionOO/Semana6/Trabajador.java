@@ -13,6 +13,10 @@ public class Trabajador {
         this.nombre = nombre;
         this.salario = salario;
     }
+
+      public String getNombre(){
+        return nombre;
+    }
     //Metodo pagar
     public double pagar(){
         return salario * 1.10;
