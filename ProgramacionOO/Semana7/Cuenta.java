@@ -16,6 +16,10 @@ public class Cuenta {
         saldo = saldo + valor;
     }
 
+    public double getSaldo() {
+        return saldo;
+    }
+
         // toString
     @Override
     public String toString() {
