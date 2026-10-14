@@ -10,7 +10,7 @@ public class MainBanco {
 
        //Creacion del objeto Banco
        
-       Banco objBanco = new Banco ("AVVillas", "Oficina Centenario", Cuenta);
+       Banco objBanco = new Banco ("AVVillas", "Oficina Centenario", objCuenta);
 
        
        System.out.println(objBanco);
