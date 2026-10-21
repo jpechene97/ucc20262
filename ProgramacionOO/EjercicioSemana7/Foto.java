@@ -8,9 +8,23 @@ public class Foto {
         this.fichero = fichero;
     }
 
+    
+
     @Override
     public String toString() {
         return "Foto [fichero=" + fichero + "]";
+    }
+
+
+
+    public String getFichero() {
+        return fichero;
+    }
+
+
+
+    public void setFichero(String fichero) {
+        this.fichero = fichero;
     }
 
     
