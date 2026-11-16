@@ -18,11 +18,6 @@ public class Ejecutarpedido {
         Producto producto1 = new Producto(1);
         
         
-        
-        
-        
-        
-        
         Cliente cliente = new Cliente("7749856", "Juan");
         
         Producto[] productos = new Producto[2];
